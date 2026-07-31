@@ -2,29 +2,33 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:"Poppins", sans-serif;
 }
 
 body{
-    background:#eef2f7;
+    background:#121212;
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
+    color:#f1f1f1;
 }
 
 .container{
-    background:white;
-    width:400px;
+    background:#1e1e1e;
+    width:420px;
     padding:30px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    border:1px solid #2d2d2d;
 }
 
 h1{
     text-align:center;
     margin-bottom:25px;
-    color:#333;
+    color:#ffffff;
+    font-size:30px;
+    font-weight:600;
 }
 
 .input-group{
@@ -34,31 +38,43 @@ h1{
 label{
     display:block;
     margin-bottom:8px;
-    font-weight:bold;
+    font-weight:500;
+    color:#d1d5db;
 }
 
 input{
     width:100%;
     padding:12px;
     font-size:16px;
-    border:1px solid #ccc;
-    border-radius:8px;
+    background:#2a2a2a;
+    color:white;
+    border:1px solid #3f3f46;
+    border-radius:10px;
+    outline:none;
+    transition:0.3s;
+}
+
+input:focus{
+    border-color:#8b5cf6;
+    box-shadow:0 0 8px rgba(139,92,246,0.5);
 }
 
 button{
     width:100%;
     padding:14px;
-    background:#2563eb;
+    background:#8b5cf6;
     color:white;
     border:none;
-    border-radius:8px;
+    border-radius:10px;
     font-size:18px;
+    font-weight:600;
     cursor:pointer;
     transition:0.3s;
 }
 
 button:hover{
-    background:#1d4ed8;
+    background:#7c3aed;
+    transform:translateY(-2px);
 }
 
 .result{
@@ -68,17 +84,18 @@ button:hover{
 
 .result h2{
     margin-top:15px;
-    color:#444;
+    color:#d1d5db;
+    font-weight:500;
 }
 
 #finalScore{
-    font-size:32px;
-    font-weight:bold;
-    color:#2563eb;
+    font-size:34px;
+    font-weight:700;
+    color:#60a5fa;
 }
 
 #classification{
     font-size:22px;
-    font-weight:bold;
-    color:#16a34a;
+    font-weight:600;
+    color:#4ade80;
 }
