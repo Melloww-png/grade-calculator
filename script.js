@@ -23,19 +23,19 @@ function calculateGrade() {
     let classification = "";
 
     if (finalScore > 69.5) {
-        classification = "🏆 First Class (1), Distinction (DIS)";
+        classification = "First Class (1), Distinction (DIS)";
     }
     else if (finalScore >= 60) {
-        classification = "🟢 Upper Second Class (2:1), Merit (M)";
+        classification = "Upper Second Class (2:1), Merit (M)";
     }
     else if (finalScore >= 50) {
-        classification = "🟢 Lower Second Class (2:2), Pass";
+        classification = "Lower Second Class (2:2), Pass";
     }
     else if (finalScore >= 40) {
-        classification = "🟢 Third Class (3), Pass";
+        classification = "Third Class (3), Pass";
     }
     else {
-        classification = "❌ Fail";
+        classification = "Fail";
     }
 
     // Display the results
