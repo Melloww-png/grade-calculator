@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🎓 Grade Calculator</h1>
+
+        <div class="input-group">
+            <label for="cw1">CW1 (33.3%)</label>
+            <input
+                type="number"
+                id="cw1"
+                placeholder="Enter CW1 score"
+                min="0"
+                max="100"
+            >
+        </div>
+
+        <div class="input-group">
+            <label for="cw2">CW2 (66.7%)</label>
+            <input
+                type="number"
+                id="cw2"
+                placeholder="Enter CW2 score"
+                min="0"
+                max="100"
+            >
+        </div>
+
+        <button onclick="calculateGrade()">
+            Calculate
+        </button>
+
+        <div class="result">
+            <h2>Final Score</h2>
+            <p id="finalScore">0.00%</p>
+
+            <h2>Classification</h2>
+            <p id="classification">-</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
